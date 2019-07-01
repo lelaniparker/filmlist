@@ -1,0 +1,13 @@
+<%= form_with model: @film, local: true do |form| %>
+  <p>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  </p>
+  <p>
+    <%= form.submit "Add film" %>
+  </p>
+<%end%>
